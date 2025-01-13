@@ -56,5 +56,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "RacingBoat Low Poly.sln"
+    "dotnet.defaultSolution": "didactic-spork.sln"
 }
