@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Devs/Luciano/Scenes/LuchoScene2.unity
+    guid: e0bac5e545db5c34b9310d193ab8258a
+  - enabled: 1
+    path: Assets/Devs/Luciano/Scenes/LuchoScene.unity
+    guid: 9967a4ea5b2b9004bbabc0f2c154ff7b
+  - enabled: 1
+    path: Assets/Scenes/TestingTrack.unity
+    guid: c68b9930db5cbaa48a964a61de7aa313
+  - enabled: 1
+    path: Assets/Scenes/MainScene.unity
+    guid: 8906e58f55accd74c92838fbd340c6f6
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
