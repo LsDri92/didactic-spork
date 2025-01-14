@@ -9,6 +9,8 @@ public class BoatControllerWithoutRigidbody : MonoBehaviour
     public float reverseSpeed = 10f;       // Maximum reverse speed
     public float turnSpeed = 50f;          // Turning speed
 
+    private float mass = 0.5f;
+
     private float currentSpeed = 0f;       // Current speed of the boat
 
     void Update()
