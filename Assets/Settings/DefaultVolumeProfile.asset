@@ -299,6 +299,66 @@ MonoBehaviour:
   cropToFit:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &-4127692015418159867
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 737bb5c030cbe824a900bc5999ac94f9, type: 3}
+  m_Name: PUnderwaterOverride
+  m_EditorClassIdentifier: 
+  active: 1
+  waterLevel:
+    m_OverrideState: 1
+    m_Value: 0
+  maxDepth:
+    m_OverrideState: 1
+    m_Value: 10
+  surfaceColorBoost:
+    m_OverrideState: 1
+    m_Value: 1
+  shallowFogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 1, a: 0.5}
+  deepFogColor:
+    m_OverrideState: 1
+    m_Value: {r: 0, g: 0, b: 1, a: 1}
+  viewDistance:
+    m_OverrideState: 1
+    m_Value: 40
+  enableCaustic:
+    m_OverrideState: 1
+    m_Value: 0
+  causticTexture:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+    dimension: 1
+  causticSize:
+    m_OverrideState: 1
+    m_Value: 10
+  causticStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  enableDistortion:
+    m_OverrideState: 1
+    m_Value: 0
+  distortionNormalMap:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+    dimension: 1
+  distortionStrength:
+    m_OverrideState: 1
+    m_Value: 1
+  waterFlowSpeed:
+    m_OverrideState: 1
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &-1410297666881709256
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -465,6 +525,8 @@ MonoBehaviour:
   - {fileID: -6288072647309666549}
   - {fileID: 7518938298396184218}
   - {fileID: -1410297666881709256}
+  - {fileID: -4127692015418159867}
+  - {fileID: 7774087894261178138}
 --- !u!114 &853819529557874667
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -922,6 +984,29 @@ MonoBehaviour:
   scale:
     m_OverrideState: 1
     m_Value: 1
+--- !u!114 &7774087894261178138
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 720855a007109dd4190a93defd8e3bb9, type: 3}
+  m_Name: PWetLensOverride
+  m_EditorClassIdentifier: 
+  active: 1
+  normalMap:
+    m_OverrideState: 1
+    m_Value: {fileID: 0}
+    dimension: 1
+  strength:
+    m_OverrideState: 1
+    m_Value: 1
+  intensity:
+    m_OverrideState: 1
+    m_Value: 0
 --- !u!114 &9001657382290151224
 MonoBehaviour:
   m_ObjectHideFlags: 3
