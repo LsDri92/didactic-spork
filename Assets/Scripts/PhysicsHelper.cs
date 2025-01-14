@@ -3,7 +3,7 @@
     public static class PhysicsHelper
     {
 
-        public static void ApplyForceToReachVelocity(Rigidbody rigidbody, Vector3 velocity, float force = 1, ForceMode mode = ForceMode.Force)
+        public static void ApplyForceToReachVelocity(Rigidbody rigidbody, Vector3 velocity, float force = 1, ForceMode mode = ForceMode.Acceleration)
         {
             if (force == 0 || velocity.magnitude == 0)
                 return;

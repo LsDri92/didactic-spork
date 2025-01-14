@@ -17,7 +17,7 @@ public class WaterBoat : MonoBehaviour
     public float MaxSpeed = 6f;
     float accelRatePerSec;
     float decelRatePerSec;
-    float brakeRatePerSec;
+    float ReverseRatePerSec;
     float forwardVelocity;
 
     protected Rigidbody Rigidbody;
@@ -30,7 +30,7 @@ public class WaterBoat : MonoBehaviour
     {
         accelRatePerSec = MaxSpeed / timeZeroToMax;
         decelRatePerSec = -MaxSpeed / timeMaxToZero;
-        brakeRatePerSec = -MaxSpeed / timeBrakeToZero;
+        ReverseRatePerSec = -MaxSpeed / timeBrakeToZero;
 
         forwardVelocity = 0;
 
@@ -78,13 +78,13 @@ public class WaterBoat : MonoBehaviour
     void Accelerate(float accel)
     {
         forwardVelocity += accel * Time.deltaTime;
-        forwardVelocity = Mathf.Clamp(forwardVelocity, -MaxSpeed, MaxSpeed);
+        forwardVelocity = Mathf.Clamp(forwardVelocity, 0, MaxSpeed);
     }
 
     void Decelerate(float accel)
     {
         forwardVelocity -= accel * Time.deltaTime;
-        forwardVelocity = Mathf.Clamp(forwardVelocity, -MaxSpeed, MaxSpeed);
+        forwardVelocity = Mathf.Clamp(forwardVelocity, -MaxSpeed/2, MaxSpeed);
     }
 
 }
